@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+    --bg-color: #222A46; /* Alterado o tom de fundo */
+    --primary-color: #E1E1E1; /* Alterado para um tom mais suave de cinza */
+    --secondary-color: #F45C60; /* Corrigido um erro de digitação na cor */
+    --font: "Nunito Sans", sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    font-family: var(--font);
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 10px; /* Alterado para um pouco mais de padding */
+}
+
+h1 {
+    font-size: 2.2rem; /* Aumentado um pouco o tamanho da fonte */
+    color: var(--bg-color);
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--bg-color);
+    margin: 0 2rem;
+    font-size: 1.1rem; /* Diminuição no tamanho da fonte */
+}
+
+nav a:hover {
+    text-decoration: underline;
+    transform: scale(1.05); /* Alterado para um aumento suave no hover */
+    transition: transform 0.15s; /* Alterado o tempo de transição */
+}
+
+.graficos-container {
+    margin: 4rem; /* Diminuído o espaçamento da margem */
+}
+
+.grafico {
+    margin-top: 3.5rem; /* Aumentado um pouco o topo */
+}
+
+.graficos-container__texto {
+    font-size: 1.4rem; /* Aumentado o tamanho da fonte */
+    text-align: center;
+    padding: 2.5rem; /* Aumentado o padding */
+    border: 3px solid var(--secondary-color); /* Alterado a espessura da borda */
+}
+
+span {
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    width: 100%;
+    height: 4rem; /* Aumentado a altura do footer */
+    margin-top: 2rem;
+}
