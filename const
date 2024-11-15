@@ -1,0 +1,12 @@
+const obterCSS = (variavel) => {
+    const estilosBody = getComputedStyle(document.body)
+    return estilosBody.getPropertyValue(variavel)
+}
+
+const configuracaoTicks = {
+    family: obterCSS('--fonte-padrao'),
+    size: 16,
+    color: obterCSS('--cor-principal')
+}
+
+export { obterCSS, configuracaoTicks }
